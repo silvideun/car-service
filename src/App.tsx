@@ -331,8 +331,8 @@ export default function App() {
           </div>
 
           {/* H1 SEO Header */}
-          <h1 className="text-[clamp(40px,7vw,90px)] font-black tracking-[-2px] leading-[1.1] mb-6 max-w-[900px] uppercase group">
-            <span className="text-transparent transition-colors duration-500 group-hover:text-text-white" style={{ WebkitTextStroke: '2px var(--color-text-white)' }}>Профессиональный</span><br />
+          <h1 className="text-[clamp(32px,8vw,90px)] font-black tracking-[-1px] md:tracking-[-2px] leading-[1.1] mb-6 max-w-[900px] uppercase group break-words hyphens-auto">
+            <span className="text-transparent transition-colors duration-500 group-hover:text-text-white [-webkit-text-stroke:1px_var(--color-text-white)] sm:[-webkit-text-stroke:2px_var(--color-text-white)]">Профессиональный</span><br />
             автосервис <span className="text-accent-red">Porsche</span><br/> в Москве
           </h1>
 
@@ -570,18 +570,18 @@ export default function App() {
                 <div className="text-[11px] font-bold tracking-[3px] uppercase text-text-gray">Контактная информация</div>
                 <div className="text-[10px] text-text-dim font-semibold">#INF-004</div>
               </div>
-              <div className="flex flex-col gap-3">
-                <div className="flex justify-between items-center">
+              <div className="flex flex-col gap-4 sm:gap-3">
+                <div className="flex flex-col sm:flex-row sm:justify-between lg:items-center gap-1 sm:gap-0">
                   <span className="text-[11px] text-text-dim">Телефон</span>
                   <span className="text-sm font-bold">+7 (495) 123-45-67</span>
                 </div>
-                <div className="flex justify-between items-center">
+                <div className="flex flex-col sm:flex-row sm:justify-between lg:items-center gap-1 sm:gap-0">
                   <span className="text-[11px] text-text-dim">Email</span>
-                  <span className="text-sm font-bold">info@porsche-service.ru</span>
+                  <span className="text-sm font-bold lg:break-normal break-all">info@porsche-service.ru</span>
                 </div>
-                <div className="flex justify-between items-center">
+                <div className="flex flex-col sm:flex-row sm:justify-between lg:items-center gap-1 sm:gap-0">
                   <span className="text-[11px] text-text-dim">Адрес</span>
-                  <span className="text-sm font-bold">Москва, ул. Автозаводская, 23</span>
+                  <span className="text-sm font-bold sm:text-right">Москва, ул. Автозаводская, 23</span>
                 </div>
               </div>
             </motion.div>
@@ -618,7 +618,7 @@ export default function App() {
               <p className="text-[13px] text-text-gray leading-[1.8] mt-4">
                 Наши мастера прошли обучение на заводах Porsche в Германии и имеют все необходимые сертификаты для работы с любыми моделями.
               </p>
-              <div className="mt-8 flex gap-10">
+              <div className="mt-8 flex flex-wrap gap-x-6 gap-y-6 justify-between sm:justify-start sm:gap-10">
                 <AnimatedCounter target={2847} label="Клиентов" />
                 <AnimatedCounter target={15} label="Лет опыта" />
                 <AnimatedCounter target={98} label="% Качество" />
@@ -785,18 +785,18 @@ export default function App() {
                 <div className="text-lg font-bold mb-1">Москва, ул. Автозаводская, 23</div>
                 <div className="text-xs text-text-dim">Бесплатная парковка для клиентов</div>
               </div>
-              <div className="bg-bg-panel border border-border-color p-[30px]">
+              <div className="bg-bg-panel border border-border-color p-[20px] sm:p-[30px]">
                 <div className="text-[10px] font-bold tracking-[3px] uppercase text-text-gray mb-4">Часы работы</div>
                 <div className="mt-5">
-                  <div className="flex justify-between py-2 border-b border-border-color text-xs">
+                  <div className="flex flex-col sm:flex-row sm:justify-between py-2 border-b border-border-color text-xs gap-1 sm:gap-0">
                     <span className="text-text-gray">Понедельник — Пятница</span>
                     <span className="font-semibold">9:00 — 21:00</span>
                   </div>
-                  <div className="flex justify-between py-2 border-b border-border-color text-xs">
+                  <div className="flex flex-col sm:flex-row sm:justify-between py-2 border-b border-border-color text-xs gap-1 sm:gap-0">
                     <span className="text-text-gray">Суббота</span>
                     <span className="font-semibold">10:00 — 18:00</span>
                   </div>
-                  <div className="flex justify-between py-2 text-xs">
+                  <div className="flex flex-col sm:flex-row sm:justify-between py-2 text-xs gap-1 sm:gap-0">
                     <span className="text-text-gray">Воскресенье</span>
                     <span className="font-semibold">Выходной</span>
                   </div>
